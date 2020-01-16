@@ -1,0 +1,17 @@
+  
+body{
+	background-image: url(../olympians.jpg);
+	text-align: center;
+	size: 35%;
+}
+
+.text-muted{
+	color: blue;
+}
+.last-seconds{
+  color: red;
+}
+.option{
+  margin: 15px;
+}
+© 2020 GitHub, Inc.
