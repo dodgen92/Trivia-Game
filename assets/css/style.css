@@ -1,9 +1,15 @@
   
 body{
-	background-image: url(../olympians.jpg);
+	background-image: url(../media/olympus.jpg);
 	text-align: center;
-	size: 35%;
-}
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-size: 1.1em !important;
+    font-family: 'Nunito', sans-serif !important;
+
+	}
 
 .text-muted{
 	color: blue;
@@ -14,4 +20,15 @@ body{
 .option{
   margin: 15px;
 }
-© 2020 GitHub, Inc.
+
+.container {
+	background-color: cornflowerblue;
+}
+
+.row{
+	background-color: cornflowerblue;
+}
+
+.jumbotron-fluid{
+	background-color: darkgoldenrod;
+}
