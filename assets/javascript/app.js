@@ -116,26 +116,33 @@ $(document).ready(function(){
         resultId = setTimeout(trivia.guessResult, 1000);
         $('#results').html('<h3>Out of time! The answer was '+ Object.values(trivia.answers)[trivia.currentSet] +'</h3>');
       }
-      // if all the questions have been shown end the game, show results
+      //show results
       else if(trivia.currentSet === Object.keys(trivia.questions).length){
+
         
-        // adds results of game (correct, incorrect, unanswered) to the page
+     
+        // adds results 
         $('#results')
           .html('<h3>Thank you for playing!</h3>'+
           '<p>Correct: '+ trivia.correct +'</p>'+
           '<p>Incorrect: '+ trivia.incorrect +'</p>'+
           '<p>Unaswered: '+ trivia.unanswered +'</p>'+
           '<p>Please play again!</p>');
-        
-        // hide game sction
+         
+          var onehundred= 7
+          if(trivia.correct = onehundred ) {alert("Wow you got 100% You really know your stuff!!!"); 
+        }
+         
+          
         $('#game').hide();
         
-        // show start button to begin a new game
+        // button to begin a new game
         $('#start').show();
       }
       
     },
-    // method to evaluate the option clicked
+    
+    // option clicked
     guessChecker : function() {
       
       // timer ID for gameResult setTimeout
@@ -152,7 +159,7 @@ $(document).ready(function(){
         trivia.correct++;
         clearInterval(trivia.timerId);
         resultId = setTimeout(trivia.guessResult, 1000);
-        $('#results').html('<h3>Correct Answer!</h3>');
+        $('#results').html('<h3>Correct!</h3>');
       }
       // else the user picked the wrong option, increment incorrect
       else{
@@ -162,7 +169,7 @@ $(document).ready(function(){
         trivia.incorrect++;
         clearInterval(trivia.timerId);
         resultId = setTimeout(trivia.guessResult, 1000);
-        $('#results').html('<h3>Better luck next time! '+ currentAnswer +'</h3>');
+        $('#results').html('<h3>Incorrect '+ currentAnswer +'</h3>');
       }
       
     },
