@@ -129,9 +129,7 @@ $(document).ready(function(){
           '<p>Unaswered: '+ trivia.unanswered +'</p>'+
           '<p>Please play again!</p>');
          
-          var onehundred= 7
-          if(trivia.correct = onehundred ) {alert("Wow you got 100% You really know your stuff!!!"); 
-        }
+         
          
           
         $('#game').hide();
