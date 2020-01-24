@@ -1,4 +1,3 @@
-  
 body{
 	background-image: url(../media/olympus.jpg);
 	text-align: center;
@@ -11,24 +10,120 @@ body{
 
 	}
 
-.text-muted{
-	color: blue;
-}
-.last-seconds{
-  color: red;
-}
-.option{
-  margin: 15px;
+
+
+
+h3,
+h4 {
+    margin: 0px!important;
+    line-height: 2!important;
+    padding-top: 1vh;
 }
 
-.container {
-	background-color: cornflowerblue;
+.game-container {
+    background-color: beige;
+    border: 1px solid black;
+    height: 100vh;
+    width: 50%;
 }
 
-.row{
-	background-color: cornflowerblue;
+#game-heading {
+    height: 10vh;
+    text-align: center;
 }
 
-.jumbotron-fluid{
-	background-color: darkgoldenrod;
+#progress-area {
+    height: 10vh;
+}
+
+.progress {
+    margin-top: 4vh;
+}
+
+#question-row {
+    height: 20vh;
+    text-align: center;
+}
+
+.answer-container {
+    width: 100%;
+    height: 40vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+#a1,
+#a2,
+#a3,
+#a0 {
+    margin: 0;
+    height: 10vh;
+    padding: 4vh 2vw 3vh 2vw;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#a0:hover {
+    background-color: lightblue;
+}
+
+#a1:hover {
+    background-color: lightblue;
+}
+
+#a2:hover {
+    background-color: lightblue;
+}
+
+#a3:hover {
+    background-color: lightblue;
+}
+
+#timer-holder {
+    height: 10vh;
+}
+
+#timer-text {
+    text-align: right;
+    height: 5vh;
+}
+
+#timer {
+    text-align: center;
+}
+
+#seconds {
+    margin-left: -15px;
+}
+
+.stats-row {
+    background-color: beige;
+    border-top: 1px dotted black;
+    height: 10vh;
+    text-align: center;
+}
+
+#stats-text,
+#stats-text2,
+#stats-text3 {
+    text-align: right;
+}
+
+#stats-correct-value,
+#stats-wrong-value,
+#stats-missed-value {
+    text-align: left;
+}
+
+#next,
+#finish {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+#game-photo {
+    margin-top: -10vh;
+}
+#playagainquestion, #game-result {
+  text-align: center;
 }
